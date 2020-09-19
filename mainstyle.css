@@ -1,0 +1,397 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-image: url("https://raw.githubusercontent.com/jthoopsamoot/IT331/master/pexels-susanne-jutzeler-2099737.jpg");
+	/*
+	Background image source:
+		Photo by Susanne Jutzeler from Pexels
+		https://www.pexels.com/photo/selective-focus-photography-of-pink-cherry-blossom-flowers-2099737/
+		Taken with her ILCA-77M2 camera on April 1, 2019
+
+	*/
+	
+	margin-left: 10%;
+	margin-top: 6%;
+	margin-right: 10%;
+	margin-bottom: 4%;
+	
+	font-family: "Segoe UI", "DejaVu Sans", "Trebuchet MS", "sans-serif";
+}
+
+
+
+table{
+	/* rounded corners */
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+
+
+/* This is the OVER-ARCHING div that applies to ALL of the page */
+#wrapper{
+	width: 100%;
+	
+}
+
+
+/*This is the div for the banner/logo only*/
+#banner{
+
+	text-align: center;
+	font-size: 3em;
+	color: white;
+	text-shadow: -2px 2px 3px black;
+	
+	padding-top: 0.5%;
+	padding-bottom: 0.25%;
+	padding-left: 2%;
+	padding-right: 2%;
+	
+	margin-bottom: 3.5%;
+	
+	/* rounded corners for #banner div */
+	border-bottom-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	
+	
+	
+}
+
+/* see NAV styles later in this document*/
+
+/* This is the div for the content. Create more div classes and place them INSIDE this */
+#content{
+	background-color: white;
+	border: solid #A63258 0.25em;
+	
+	/* the spacing is identical to the footer's */
+	padding-top: 0.25%;
+	padding-bottom: 0.5%;
+	padding-left: 2%;
+	padding-right: 2%;
+	
+	margin-bottom: 1%;
+	
+	/* rounded edges for #content div */
+	border-bottom-left-radius: 15px;
+	border-top-right-radius: 15px;
+
+	border-bottom-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+
+
+/* DIV STYLE: this is the secondary DIV that I use to group stuff in the #content DIV together*/
+.contentSection{
+	flex-direction: row;
+	margin-bottom: 2em;
+	margin-top: 2em;
+	
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 1em;
+	
+}
+
+
+.contentSectionSection{
+	flex-direction: column;
+
+}
+
+
+
+
+
+/* IMAGE styles to make them float LEFT or RIGHT */
+.right{
+	float: right;
+	flex-direction: column;
+
+	
+	margin-bottom: 1%;
+	margin-top: 1%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+
+.left{
+	float: left;
+	flex-direction: column;
+	
+	margin-bottom: 1%;
+	margin-top: 1%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+
+
+
+
+
+
+/*This is the div for the footer only*/
+#footer{
+	background-color: #A63258;
+	color: white;
+	border: dotted white 0.15em;
+	border-bottom-left-radius: 15px;
+	border-top-right-radius: 15px;
+
+	
+	
+	/* space from the content div and this one */
+	margin-top: 2%;
+	margin-bottom: 2%;
+	
+	padding-top: 0.25%;
+	padding-bottom: 0.5%;
+	padding-left: 2%;
+	padding-right: 2%;
+	
+}
+
+
+/* Styles for the FOOTER */
+.footerSubText{
+	font-size: 0.85em;
+}
+
+
+
+
+
+
+
+
+
+/* Styles for IMAGES and PARAGRAPH*/
+.center{
+	text-align: center;
+}
+
+.centerImage{
+	text-align: center;
+}
+
+
+
+
+
+/* Styles for HEADER(S) */
+h1, h2, h3, h4, h5{
+	color: #A63258;
+	text-shadow: -3px 3px 3px lightgray;
+}
+
+
+
+
+/* Styles for the LIST */
+	ul li{
+		list-style-image: url("https://raw.githubusercontent.com/jthoopsamoot/IT331/master/petal.png");
+			/* Image of 'Cherry Blossom Petal' from the mmorpg, MapleStory, at https://global.hidden-street.net/items/leftover/cherry-blossom-petal as of September 18, 2020*/
+		list-style-position: outside;
+	}
+
+
+
+
+/* Styles for the FORM */
+	/* this is the box that outlines the "section" of the form */
+	fieldset{
+		
+		margin-bottom: 3%;
+		margin-left: 3%;
+		margin-right: 3%;
+		margin-top: 2%;
+
+		padding-left: 4%;
+		padding-right: 4%;
+		padding-bottom: 2%;
+		padding-top: 2%;
+		
+		border: dotted #cf84a9 0.1em;
+	}
+
+
+
+	/* this is the label of each "section" of the form */
+	legend{
+		font-size: 1.5em;
+		background-color: #A63258;
+		border: dotted white 0.1em;
+		color: white;
+		text-shadow: -2px 2px 3px black;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+		padding-top: 0.25em;
+		padding-bottom: 0.25em;
+
+		border-bottom-left-radius: 15px;
+		border-top-right-radius: 15px;
+
+	}
+
+
+/* STYLES FOR FORM BUTTONS */
+
+#submitButton{
+	color: white;
+	background-color: #A63258;
+	padding: 1em 4em;
+	text-shadow: -2px 3px 2px black;
+	border: dotted white 0.2em;
+	
+	/* rounded corners */
+	border-bottom-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	
+}
+
+#resetButton{
+	color: white;
+	background-color: #A63258;
+	padding: 1em 4em;
+	margin-left: 4em;
+	text-shadow: -2px 3px 2px black;
+	border: dotted white 0.2em;
+	
+	/* rounded corners */
+	border-bottom-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+#submitButton a:hover{
+	color: #A63258;
+	background-color: white;
+	padding: 1em 4em;
+	border: dotted #A63258 0.2em;
+}
+
+#resetButton a:hover{
+	color: #A63258;
+	background-color: white;
+	padding: 1em 4em;
+	margin-left: 4em;
+	border: dotted #A63258 0.2em;
+}
+
+
+
+
+
+
+/* TABLE STYLES: */
+table{
+	background-color: black;
+	margin-bottom: 3%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 3%;
+}
+
+/* This is the table header stuff ONLY */
+th{
+	background: #A63258;
+	border: solid #A63258;
+	color: white;
+	text-shadow: -2px 2px 3px black;
+	
+	padding-bottom: 1%;
+	padding-top: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+
+
+/*This is the actual data elements, NOT the table header stuff*/
+td{
+	padding-bottom: 1%;
+	padding-top: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+tr{
+	background: white;
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+/*NAVIGATION STYLES: */
+nav ul{
+		/* center the nav bar with this: */
+		text-align: center;
+	
+		/* space between the nav bar and the #content div */
+		margin-bottom: 3.5%;
+	
+	}
+
+/* This is each button of the nav bar: */
+nav ul li{
+			display: inline-block;
+			background-color: #A63258;
+		
+		/* text styles: */
+			color: white;
+			font-size: 1.25em;
+			text-shadow: -2px 2px 6px black;
+			border: dotted white 0.15em;
+		
+			
+		/* size of the buttons: */
+			padding-top: 1%;
+			padding-bottom: 1%;
+			padding-left: 5%;
+			padding-right: 5%;
+			
+		/* space between the buttons: */
+			margin-left: 1.5%;
+			margin-right: 1.5%;
+			
+		/* rounded corners, and changed border of the buttons */
+			border-bottom-left-radius: 15px;
+			border-top-right-radius: 15px
+		}
+		
+
+
+	/* interactive styles: */
+		nav ul li a:hover{
+			font-style: italic;	
+		}
+
+	/* this is the actual "link" on the page*/
+		nav ul li a:link{
+			color: white;
+			text-decoration: none;
+		}
+		
+	/* action for if you go back to the page and see a link visited already */
+		nav a:visited{
+			color: #FFE900;
+		}
+		
+		
